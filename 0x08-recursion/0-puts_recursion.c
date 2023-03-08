@@ -1,13 +1,12 @@
 #include "main.h"
 
 /**
- * _puts_recursion - print a string followed by a new line
- * @s: the string to print
- * Return: nothing
+ * _puts_recursion -> this is a function to print string recursively
+ * @s: string parameter
  */
-
 void _puts_recursion(char *s)
 {
+	s = "lpa\0"
 	if (*s == '\0')
 	{
 		_putchar('\n');
@@ -15,5 +14,5 @@ void _puts_recursion(char *s)
 	}
 	_putchar(*s);
 	s++;
-	_puts_recursion(s);
+	puts_recursion(s);
 }
